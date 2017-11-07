@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style type="text/css">
+	.bc{
+		/* background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjSH4LFcUj162cg0z-Ul2Dh7YELPpdxaVLuy7kRbbfJyPx50U"); */
+		background-color: grey;
+	}
+	
+	.x{
+		text-align: center;
+		background-color: red;
+	}
+	.a{
+		text-align: center;
+		margin-left: 380px;
+		margin-right: 380px;
+		margin-top: 100px;
+		
+		}
+	.p{
+		text-align: center;
+		font-size: 60px;
+		font-family: serif;
+		color: white;
+		border-width: 50px;
+	}
+
+</style>
+</head>
+<body>
+	<div class="bc a">
+	<h1 class="p">Login</h1>
+	<div class="container-fluid">
+				<div class="well">
+					<form action="">
+						<img src="C:\Users\HP\Desktop\log.png" width="75px" height="75px" alt="ammu.png"></br></br>
+						<div class="form-group">
+						 <label for="email">Email:</label>
+      <input type="email"  id="email" class="form-control" placeholder="Enter email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" class="form-control" placeholder="Enter password" name="pwd" required>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="return callprompt('popup.html','popup',450,450);">Submit</button></br></br>
+</form>
+	<p>Do not have an account?<a href="C:\Users\HP\Documents\preLogue\newregister.html">Register</a> here.</p>
+	
+					
+	</div>
+	</div>
+	</div>
+	</div>
+	
+</div>
+</div>
+<script type="text/javascript">
+	function callprompt(url, title,w,h){
+		var left = (screen.width/2)-(w/2);
+		var top = (screen.height/2)-(h/2);
+		return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+} 
+
+</script>
+</body>
+</html>
