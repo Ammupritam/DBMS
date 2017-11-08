@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>user input</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	table,th,td{
+  		border:3px solid black;
+  		color: brown;
+
+  	}
+  	body{
+  		text-align: center;
+  		/*background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0vxCeUWc-o3O7-rAD7YOWoBo0-jUKtjV28vjPlegwbOsqSgfF');*/
+  		background: grey;
+  		color: white;
+
+  	}
+  	.cen{
+  		text-align: center;
+  	}
+  	.sty{
+  		color: blue;
+  		font-family: cursive;
+  	}
+  	.well{
+  		align-content: center;
+  		margin-right: 300px;
+  		margin-left: 300px;
+
+
+  	}
+  	.whi{
+  		background-color: white;
+  	}
+
+  </style>
+</head>
+
+	<body>
+	<!-- <table id="myTable">
+		<tr>
+			<th>Event Name</th>
+			<th>Event Time</th>
+		</tr>
+		<tr>
+    <td><input type="text" name="texts" placeholder="name1"></td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <td><input type="text" name="texts" placeholder="name2"></td>
+    <td>y</td> 
+  </tr>
+ 
+	</table>
+</br></br><button type="button" onclick="func()">click to 
+add more</button>
+ -->
+ 
+ <!-- <div align="center" class="sty"> -->
+ 	<h2>We will keep your events organized</h2>
+ 	<h4>Lets get started!!<img src="C:\Users\HP\Desktop\i2.jpg" width="100px" height="60px" /></h4><!-- </div> --></br></br>
+ 	 	<table id="dataTable" width="150px" border="1" class="whi" align="center">
+    	<tr> 
+    		<th></th>
+    		<th>Event Name</th>
+    		<th>Event Time</th>
+    	</tr></div>
+        <tr>
+            <td>
+                1
+            </td>
+            <td>
+                <input type="text" />
+            </td>
+            <td>
+            	<input type="Time"/>
+            </td>
+        </tr>
+    </table>
+</br></br><div class="cen"><input type="button" value="Add More Events" class="btn btn-primary"onclick="addRow('dataTable')" /> <input type="button" value="Delete Events" class="btn btn-primary" onclick="cancel()"/></br></br>
+<button class="btn btn-primary" >Done</button>
+</div>
+<script type="text/javascript">
+	// function func(){
+	// 	var table = document.getElementById("myTable");
+	// 	var row = table.insertRow(3);
+	// 	var cell1 = row.insertCell(0);
+	// 	var cell2 = row.insertCell(1);
+	// 	cell1 = document.createElement("input");
+	// 	// cell2.innerHTML = "new cell2"
+		function addRow(tableID) {
+            var table = document.getElementById(tableID);
+            var rowCount = table.rows.length;
+            var row = table.insertRow(rowCount);
+            var firstCell = row.insertCell(0);
+            firstCell.innerHTML = rowCount + 0;
+            var secondCell = row.insertCell(1);
+            var element = document.createElement("input");
+            element.type = "text";
+            element.name = "txtbox[]";
+            secondCell.appendChild(element);
+            var thirdCell = row.insertCell(2);
+            var ele = document.createElement("input");
+            ele.type = "Time";
+            ele.name = "txtbox[]";
+            thirdCell.appendChild(ele);
+
+        }
+        function cancel(){
+  			 var a = document.getElementById("dataTable");
+  			 var rCount = a.rows.length;
+  			 for (var i = rCount ; i > 0 ; i--) {
+    		  		a.deleteRow(i);
+    		
+   }
+}
+    </script>
+
+</script>
+</body>
+
+</html>
